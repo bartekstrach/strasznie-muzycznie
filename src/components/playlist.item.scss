@@ -1,0 +1,39 @@
+@import '../constants/colors';
+
+.playlist-item-container {
+  min-width: 450px;
+  min-height: 450px;
+  position: relative;
+}
+
+.playlist-item-photo {
+  position: relative;
+  height: 50%;
+  max-height: 50%;
+  filter: grayscale(100%);
+
+  > div {
+    height: 100% !important;
+  }
+}
+
+.playlist-item-details {
+  padding: 1em;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist-item-links {
+    display: flex;
+
+    >a {
+        fill: $primary-color;
+
+        &:hover {
+            fill: $accent-color;
+        }
+    }
+}

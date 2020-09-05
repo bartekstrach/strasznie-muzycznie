@@ -1,0 +1,21 @@
+@import '../constants/colors';
+
+.background-circle {
+    position: absolute;
+    margin: 0 auto;
+    filter: blur(10px);
+}
+
+#background-circle-1 {
+    top: 200px;
+    left: 100px;
+    fill: $primary-color;
+    transform: scale(7.0);
+}
+
+#background-circle-2 {
+    top: 225px;
+    left: 225px;
+    fill: $accent-color;
+    transform: scale(5.0);
+}

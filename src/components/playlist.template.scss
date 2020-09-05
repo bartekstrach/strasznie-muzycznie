@@ -1,0 +1,62 @@
+@import "../constants/colors";
+
+.playlist-template-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist-template-content {
+  width: 90%;
+  height: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid $primary-color;
+  padding: 2em;
+}
+
+.playlist-template-photo {
+  position: relative;
+  width: 30%;
+  max-width: 30%;
+  filter: grayscale(100%);
+}
+
+.playlist-template-details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
+  width: 50%;
+}
+
+.playlist-template-details-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playlist-template-tracks {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    padding-left: 1em;
+    text-align: center;
+}
+
+.playlist-template-links {
+  display: flex;
+  justify-content: center;
+
+  > a {
+    fill: $primary-color;
+
+    &:hover {
+      fill: $accent-color;
+    }
+  }
+}

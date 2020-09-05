@@ -1,0 +1,24 @@
+@import '../constants/colors';
+
+.playlist-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin: 0 2em;
+
+  > div {
+    border: 2px solid $primary-color;
+    margin-right: 2em;
+    height: 50%;
+
+    &:hover {
+      // border-color: $primary-color-light;
+      border-color: $accent-color;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
